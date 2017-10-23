@@ -1,0 +1,77 @@
+<DOCTYPE html>
+    <html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    </head>
+    <body bgcolor="#fa8072">
+    <nav>
+        <div class="nav-wrapper indigo lighten-4">
+            <a href="" class="brand-logo">BELOMIR-TRANS</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="">Main Page</a></li>
+                <li><a href="">About company<span class="new badge">4</span></a></li>
+                <li><a href="">Contacts</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="carousel">
+        <a class="carousel-item" href="img/man1.jpg"><img src="img/man1.jpg"></a>
+        <a class="carousel-item" href="#two!"><img src="img/man2.jpg"></a>
+        <a class="carousel-item" href="#three!"><img src="img/man3.jpg"></a>
+        <a class="carousel-item" href="#four!"><img src="img/man4.jpg"></a>
+        <a class="carousel-item" href="#five!"><img src="img/man5.jpg"></a>
+    </div>
+
+    <div class="container purple accent-1">
+        <video class="responsive-video" controls>
+            <source src="video.mp4" type="video/mp4">
+        </video>
+    </div>
+    <footer class="page-footer indigo lighten-4">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">Footer Content</h5>
+                    <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <h5 class="white-text">Links</h5>
+                    <ul>
+                        <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                © 2014 Copyright Text
+                <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+            </div>
+        </div>
+    </footer>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.carousel').carousel();
+        });
+    </script>
+    <script type="text/javascript">
+        document.ondragstart = noselect;
+        // запрет на перетаскивание
+        document.onselectstart = noselect;
+        // запрет на выделение элементов страницы
+        document.oncontextmenu = noselect;
+        // запрет на выведение контекстного меню
+        function noselect() {return false;}
+    </script>
+    </body>
+    </html>
